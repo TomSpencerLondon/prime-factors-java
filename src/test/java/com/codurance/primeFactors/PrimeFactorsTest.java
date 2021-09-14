@@ -26,4 +26,9 @@ public class PrimeFactorsTest {
   void of_4Is2_2() {
     assertThat(PrimeFactors.of(4), is(ImmutableList.of(2, 2)));
   }
+
+  @Test
+  void of_6Is2_3() {
+    assertThat(PrimeFactors.of(6), is(ImmutableList.of(2, 3)));
+  }
 }
