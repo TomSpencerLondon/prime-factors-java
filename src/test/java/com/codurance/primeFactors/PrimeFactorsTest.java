@@ -43,6 +43,11 @@ public class PrimeFactorsTest {
   }
 
   @Test
+  void of_20Is_2_2_5() {
+    assertThat(PrimeFactors.of(20), is(ImmutableList.of(2, 2, 5)));
+  }
+
+  @Test
   void of_acceptanceTest() {
     assertThat(PrimeFactors.of(2*2*2*3*3*5*7*11), is(ImmutableList.of(2, 2, 2, 3, 3, 5, 7, 11)));
   }
